@@ -4,33 +4,6 @@
   
     
     <entry>
-      <title>单元测试执行多次，导致插入数据重复</title>
-      <link href="/posts/javaError2/"/>
-      <url>/posts/javaError2/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><p><strong>问题：在用单元测试代码时，重复执行，导致向数据库插入两次数据。</strong></p><p><strong>原因：单元测试时会先build进行编译，而build的时候会执行你项目中的所有加了@Test的方法。</strong></p><p><img src="/blog-img/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E9%87%8D%E5%A4%8D.jpg" alt="Alt text"></p><p><strong>解决：通过在pom.xml配置文件进行配置。</strong></p><blockquote><p><code>&lt;build&gt;</code><br>&emsp; <code>&lt;plugins&gt;</code><br>&emsp;&emsp;<code>&lt;plugin&gt;</code><br>&emsp;&emsp;&emsp;<code>&lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;</code><br>&emsp;&emsp;&emsp; <code>&lt;artifactId&gt;maven-surefire-plugin&lt;/artifactId&gt;</code><br>&emsp;&emsp;&emsp;<code>&lt;configuration&gt;</code><br>&emsp;&emsp;&emsp;&emsp;  <code>&lt;skipTests&gt;true&lt;/skipTests&gt;</code><br>&emsp;&emsp;&emsp;  <code>&lt;/configuration&gt;</code><br>&emsp;&emsp; <code>&lt;/plugin&gt;</code><br>&emsp; <code>&lt;/plugins&gt;</code><br><code>&lt;/build&gt;</code></p></blockquote>]]></content>
-      
-      
-      <categories>
-          
-          <category> MQ </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> junit </tag>
-            
-            <tag> 问题集 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>idea-Error(3, 32) java程序包不存在的问题</title>
       <link href="/posts/javaError1/"/>
       <url>/posts/javaError1/</url>
@@ -50,6 +23,33 @@
             <tag> maven </tag>
             
             <tag> 问题集 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>单元测试执行多次，导致插入数据重复</title>
+      <link href="/posts/javaError2/"/>
+      <url>/posts/javaError2/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><p><strong>问题：在用单元测试代码时，重复执行，导致向数据库插入两次数据。</strong></p><p><strong>原因：单元测试时会先build进行编译，而build的时候会执行你项目中的所有加了@Test的方法。</strong></p><p><img src="/blog-img/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E9%87%8D%E5%A4%8D.jpg" alt="Alt text"></p><p><strong>解决：通过在pom.xml配置文件进行配置。</strong></p><blockquote><p><code>&lt;build&gt;</code><br>&emsp; <code>&lt;plugins&gt;</code><br>&emsp;&emsp;<code>&lt;plugin&gt;</code><br>&emsp;&emsp;&emsp;<code>&lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;</code><br>&emsp;&emsp;&emsp; <code>&lt;artifactId&gt;maven-surefire-plugin&lt;/artifactId&gt;</code><br>&emsp;&emsp;&emsp;<code>&lt;configuration&gt;</code><br>&emsp;&emsp;&emsp;&emsp;  <code>&lt;skipTests&gt;true&lt;/skipTests&gt;</code><br>&emsp;&emsp;&emsp;  <code>&lt;/configuration&gt;</code><br>&emsp;&emsp; <code>&lt;/plugin&gt;</code><br>&emsp; <code>&lt;/plugins&gt;</code><br><code>&lt;/build&gt;</code></p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> MQ </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 问题集 </tag>
+            
+            <tag> junit </tag>
             
         </tags>
       
