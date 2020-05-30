@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Mybatis</title>
+      <link href="/posts/Mybatis/"/>
+      <url>/posts/Mybatis/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><center><h1>第1章 框架概述</h1></center><h2 id="软件开发常用结构"><a href="#软件开发常用结构" class="headerlink" title="软件开发常用结构"></a>软件开发常用结构</h2><div class="note info">            <h3 id="三层架构"><a href="#三层架构" class="headerlink" title="三层架构"></a>三层架构</h3><p>界面层（User Interface layer）、业务逻辑层（Business Logic Layer）、数据访问层（Data access layer）</p>          </div><p><strong>三层的职责:</strong></p><ol><li>界面层（表示层，视图层）：主要功能是接受用户的数据，显示请求的处理结果。使用 web 页面和<br>用户交互，手机 app 也就是表示层的，用户在 app 中操作，业务逻辑在服务器端处理。</li><li>业务逻辑层：接收表示传递过来的数据，检查数据，计算业务逻辑，调用数据访问层获取数据。</li><li>数据访问层：与数据库打交道。主要实现对数据的增、删、改、查。将存储在数据库中的数据提交<br>给业务层，同时将业务层处理的数据保存到数据库</li></ol><p><strong>三层的处理请求的交互：</strong></p><p>用户—&gt; 界面层—&gt;业务逻辑层—&gt;数据访问层—&gt;DB 数据库</p><p><img src="/blog-img/pasted-3.png" alt="upload successful"></p><p><strong>为什么要使用三层？</strong></p><p>1，结构清晰、耦合度低, 各层分工明确<br>2，可维护性高，可扩展性高<br>3，有利于标准化<br>4，开发人员可以只关注整个结构中的其中某一层的功能实现<br>5，有利于各层逻辑的复用</p><div class="note info">            <h3 id="常用框架"><a href="#常用框架" class="headerlink" title="常用框架"></a>常用框架</h3>          </div><p><strong>常见的 J2EE 中开发框架：</strong></p><blockquote><p>MyBatis 框架：<br>MyBatis 是一个优秀的基于 java 的持久层框架，内部封装了 jdbc，开发者只需要关注 sql 语句<br>本身，而不需要处理加载驱动、创建连接、创建 statement、关闭连接，资源等繁杂的过程。<br>MyBatis 通过 xml 或注解两种方式将要执行的各种 sql 语句配置起来，并通过 java 对象和 sql 的<br>动态参数进行映射生成最终执行的 sql 语句，最后由 mybatis 框架执行 sql 并将结果映射为 java<br>对象并返回。</p></blockquote><blockquote><p>Spring 框架：<br>Spring 框架为了解决软件开发的复杂性而创建的。Spring 使用的是基本的 JavaBean 来完成以前<br>非常复杂的企业级开发。Spring 解决了业务对象，功能模块之间的耦合，不仅在 javase,web 中使用，<br>大部分 Java 应用都可以从 Spring 中受益。<br>Spring 是一个轻量级控制反转(IoC)和面向切面(AOP)的容器。</p></blockquote><blockquote><p>SpringMVC 框架<br>Spring MVC 属于 SpringFrameWork 3.0 版本加入的一个模块，为 Spring 框架提供了构建 Web<br>应用程序的能力。现在可以 Spring 框架提供的 SpringMVC 模块实现 web 应用开发，在 web 项目中<br>可以无缝使用 Spring 和 Spring MVC 框架。</p></blockquote><h2 id="框架是什么"><a href="#框架是什么" class="headerlink" title="框架是什么"></a>框架是什么</h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> java框架 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Mybatis </tag>
+            
+            <tag> java框架 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>idea-Error(3, 32) java程序包不存在的问题</title>
       <link href="/posts/javaError1/"/>
       <url>/posts/javaError1/</url>
