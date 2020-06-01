@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>JSTL标签不起作用</title>
+      <link href="/posts/jstl/"/>
+      <url>/posts/jstl/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><ul><li>JSP页面中的EL标签直接成字符串输出(如:${msg})</li></ul><h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><p>el标签没有被识别，有以下两种可能</p><ol><li>jdk+jstl的组合不匹配</li><li>web.xml版本不匹配</li></ol><h2 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h2><ul><li>jsp页面的开头加一句<br><code>&lt;%@ page isELIgnored=“false” %&gt;</code>再测试,完美解决。</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> EL&amp;JSTL </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JSTL </tag>
+            
+            <tag> 问题集 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Spring</title>
       <link href="/posts/Spring/"/>
       <url>/posts/Spring/</url>
@@ -62,7 +89,7 @@
       <link href="/posts/javaError1/"/>
       <url>/posts/javaError1/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><p><strong>问题：用maven配置，新建项目编译时提示以下错误信息：</strong><br><code>java: 程序包org.springframework.context不存在</code><br><code>java: 程序包org.springframework.context.support不存在</code></p><p><strong>原因：idea的Maven有没有勾选，没有的话勾上，然后ok，运行一下项目，等加载完成就ok了。不勾选的，项目是用IDEA实现的没有链到Maven，所以会出现包不存在。</strong></p><p><strong>解决：ctrl+shift+S 打开设置勾选</strong><br><img src="/blog-img/javaError2.png" alt="Alt text"></p>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><ul><li>用maven配置，新建项目编译时提示以下错误信息<br><code>java: 程序包org.springframework.context不存在</code><br><code>java: 程序包org.springframework.context.support不存在</code></li></ul><h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><ul><li>idea的Maven有没有勾选，没有的话勾上，然后ok，运行一下项目，等加载完成就ok了。不勾选的，项目是用IDEA实现的没有链到Maven，所以会出现包不存在。</li></ul><h2 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h2><ul><li>ctrl+shift+S 打开设置勾选<br><img src="/blog-img/javaError2.png" alt="Alt text"></li></ul>]]></content>
       
       
       <categories>
@@ -74,9 +101,9 @@
       
         <tags>
             
-            <tag> maven </tag>
-            
             <tag> 问题集 </tag>
+            
+            <tag> maven </tag>
             
         </tags>
       
