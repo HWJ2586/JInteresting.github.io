@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Github连接不上</title>
+      <link href="/posts/githublianjie/"/>
+      <url>/posts/githublianjie/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h1 id="今天上传博客时至github失败，ping-GitHub-com超时"><a href="#今天上传博客时至github失败，ping-GitHub-com超时" class="headerlink" title="今天上传博客时至github失败，ping GitHub.com超时"></a>今天上传博客时至github失败，ping GitHub.com超时</h1><pre><code>C:\Users\ajun&gt;ping github.com正在 Ping github.com [192.30.255.112] 具有 32 字节的数据:请求超时。请求超时。请求超时。请求超时。192.30.255.112 的 Ping 统计信息:    数据包: 已发送 = 4，已接收 = 0，丢失 = 4 (100% 丢失)，</code></pre><p>一顿百度后找到解决办法。<br>打开<code>C:\Windows\System32\drivers\etc\hosts</code> ，复制下面内容保存。</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">192.30.255.112  github.com git </span><br><span class="line">185.31.16.184 github.global.ssl.fastly.net</span><br></pre></td></tr></table></figure><p>然后就可以了</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 问题集 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 问题集 </tag>
+            
+            <tag> GitHub </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>SpringMVC</title>
       <link href="/posts/SpringMVC/"/>
       <url>/posts/SpringMVC/</url>
